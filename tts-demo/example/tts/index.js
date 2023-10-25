@@ -27,7 +27,7 @@
     btnStatus === "PLAY" && changeBtnStatus("STOP");
   };
   function getWebSocketUrl(apiKey, apiSecret) {
-    var url = "ws://tts-api.xfyun.cn/v2/tts";
+    var url = "wss://tts-api.xfyun.cn/v2/tts";
     var host = location.host;
     var date = new Date().toGMTString();
     var algorithm = "hmac-sha256";
